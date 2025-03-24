@@ -32,7 +32,7 @@
     "@angular/cli": "~17.1.0",
     "@angular/compiler-cli": "~17.1.0",
     "@angular/language-service": "~17.1.0",
-    "@jsverse/transloco-keys-manager": "^5.1.0",
+    "@jsverse/transloco-keys-manager": "^6.1.0",
     "@nx/eslint": "17.3.2",
     "@nx/eslint-plugin": "17.3.2",
     "@nx/jest": "17.3.2",
