@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
+  provideTransloco,
   provideTranslocoScope,
   TranslocoModule,
-  TranslocoPipe,
+  TranslocoPipe
 } from '@jsverse/transloco';
 import { LibWithTranslocoComponent } from './lib-with-transloco/lib-with-transloco.component';
 
@@ -14,13 +15,11 @@ export const loader = ['en', 'dk'].reduce((acc: Record<string, any>, lang) => {
 
 @NgModule({
   declarations: [LibWithTranslocoComponent],
-  imports: [CommonModule, TranslocoModule, TranslocoPipe],
-  providers: [
-    provideTranslocoScope({
-      scope: 'libraryScope',
-      loader,
-    }),
-  ],
+  imports: [CommonModule, TranslocoPipe],
+  providers: [ provideTranslocoScope({
+    scope: 'dialogs',
+    loader
+  })],
   exports: [LibWithTranslocoComponent],
 })
 export class LibWithTranslocoModule {}
