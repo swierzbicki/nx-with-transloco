@@ -1,0 +1,10 @@
+{
+  "__COMMENT": "Do not remove this file. transloco-keys-managers needs this to recognize projects.",
+  "version": 2,
+  "projects": {
+    "desktop": "apps/nx-with-transloco",
+    "mobile": "apps/second-app",
+    "lib-with-transloco": "libs/lib-with-transloco"
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
+}
